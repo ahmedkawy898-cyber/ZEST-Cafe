@@ -1,21 +1,71 @@
-
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z Coming Soon - Social Links</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f9f9f9; }
-        h1 { color: #333; }
-        a { display: block; margin: 15px; font-size: 20px; color: #0077cc; text-decoration: none; }
-        a:hover { color: #ff6600; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z Coming Soon - Social Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #4b2e2e; /* بني غامق */
+      color: white;
+      text-align: center;
+    }
+    /* Animation for logo */
+    .logo {
+      max-width: 300px;
+      width: 60%;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    h1 { 
+      color: white; 
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1s;
+    }
+    a {
+      display: block;
+      margin: 15px auto;
+      font-size: 22px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    a:nth-of-type(1) { animation-delay: 1.5s; }
+    a:nth-of-type(2) { animation-delay: 1.8s; }
+    a:nth-of-type(3) { animation-delay: 2.1s; }
+
+    a:hover { 
+      color: #ffffff; 
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-    <h1>تابعنا على السوشيال ميديا</h1>
-    <a href="https://www.tiktok.com/@z.coming.soon?_t=ZS-8zJZxmW3vrm&_r=1" target="_blank">TikTok</a>
-    <a href="https://www.facebook.com/share/17LUETLd2Y/?mibextid=wwXIfr" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/z_coming_soon?igsh=MXh3YmljeWh1bXV3aA==" target="_blank">Instagram</a>
+  <!-- اللوجو في النص -->
+  <img src="https://i.postimg.cc/ZYFKjn91/ED32-B54-A-3585-4-E31-B3-BF-CCD4-BCC5927-E.jpg" alt="Zest Logo" class="logo">
+  
+  <h1>Follow us</h1>
+  
+  <a href="https://www.tiktok.com/@z.coming.soon?_t=ZS-8zJZxmW3vrm&_r=1" target="_blank">TikTok</a>
+  <a href="https://www.facebook.com/share/17LUETLd2Y/?mibextid=wwXIfr" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com/z_coming_soon?igsh=MXh3YmljeWh1bXV3aA==" target="_blank">Instagram</a>
 </body>
 </html>
